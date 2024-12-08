@@ -5,7 +5,7 @@ This roadmap outlines the list of algorithms and functions that will be added to
 These are fundamental algorithms and functions often used in competitive programming and data structures. These functions are implemented in the most optimal way. 
 
 ### 1. Array functions
-- [x] [Reverse an Array (copy)](Array_Functions\Reverse_an_Array)
+- [x] [Reverse an Array (copy)](Array_Functions/Reverse_an_Array)
 - [ ] Reverse an Array (in place)
 - [ ] Find Max-Min of Array
 - [ ] Prefix Array
@@ -19,13 +19,13 @@ These are fundamental algorithms and functions often used in competitive program
 - [ ] Count occurrences of an element
 
 ### 2. String Algorithms
-- [x] [Frequency Map](String_Functions\Frequency_Map)
+- [x] [Frequency Map](String_Functions/Frequency_Map)
 - [ ] Generate all Substrings
 - [ ] Generate all Permutation
 - [ ] Palindrome Check
 
 ### 3. Number Theory
-- [x] [Prime Check](Number_Theory_Functions\Prime_Check)
+- [x] [Prime Check](Number_Theory_Functions/Prime_Check)
 - [ ] Sieve of Eratosthenes (upto 'n' numbers)
 - [ ] Prime Factorization
 - [ ] Get all Factors
@@ -39,7 +39,7 @@ These are fundamental algorithms and functions often used in competitive program
 
 
 ### 4. Graph Algorithms
-- [x] [Depth-First Search (DFS) (Recursive)](Graph_Functions\DFS_Recursion)
+- [x] [Depth-First Search (DFS) (Recursive)](Graph_Functions/DFS_Recursion)
 - [ ] Breadth-First Search (BFS)
 - [ ] Depth-First Search (DFS) (Iterative)
 - [ ] Dijkstra's Shortest Path Algorithm
@@ -53,6 +53,6 @@ These are fundamental algorithms and functions often used in competitive program
 
 
 ### 5. Miscellaneous
-- [x] [Fenwick Tree (Point Update, Range Query)](Miscellaneous_Functions\Fenwick_Tree)
+- [x] [Fenwick Tree (Point Update, Range Query)](Miscellaneous_Functions/Fenwick_Tree)
 - [ ] Sparse Table (Min, Max, And, Or, Gcd, Lcm)
 - [ ] Segment Tree (Min and Max both, pass the function name as parameter in the class)
