@@ -11,7 +11,7 @@ Welcome to the repository! This project aims to provide a collection of frequent
 ### Step 2: Choose a Problem
 1. Search through the existing directories and check if the function/algorithm you want to add already exists. If it exists, please add your code to the existing folder.
 2. If the function/algorithm you wish to add does not exist, feel free to create a new folder with the appropriate name.
-3. Raise a new **Issue** and wait till beign assigned.
+3. Raise a new **Issue** and wait till being assigned.
 
 ### Step 3: Add Code in Three Languages
 For each problem, please provide code in **Java**, **C++**, and **Python**. Ensure that:

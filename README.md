@@ -12,7 +12,7 @@ The goal of this repository is to provide a comprehensive library that can be us
 
 ## Features
 
-- **Wide Coverage**: Includes a variety of algorithms in categories such as Sorting, Searching, Dynamic Programming, Graph Algorithms, Number Theory, and more.
+- **Wide Coverage**: Includes a variety of algorithms in different categories.
 - **Multiple Languages**: Each algorithm is implemented in **Java**, **C++**, and **Python**.
 - **Easy to Navigate**: Algorithms are organized in folders, and each folder contains code in all three languages.
 - **Sample Code**: Every contribution includes sample input-output demonstrations to show the usage of the algorithms.

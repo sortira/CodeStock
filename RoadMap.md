@@ -10,30 +10,30 @@ These are fundamental algorithms and functions often used in competitive program
 - [ ] Find Max-Min of Array
 - [ ] Prefix Array
 - [ ] Suffix Array
-- [ ] Finding Mex of Array
+- [ ] Finding Mex of Array (Smallest Positive integer which is not present in array)
 - [ ] Print 2D Matrix
 - [ ] Binary Search
 - [ ] Upper bound (Binary Search)
 - [ ] Upper bound (Binary Search)
-- [ ] Generate all Permutation
-- [ ] Count occurrences of an element
+- [ ] Generate all Permutation (n!)
+- [ ] Count occurrences of an element 
 
 ### 2. String Algorithms
 - [x] [Frequency Map](String_Functions/Frequency_Map)
-- [ ] Generate all Substrings
-- [ ] Generate all Permutation
+- [ ] Generate all Substrings (2*n)
+- [ ] Generate all Permutation (2*n)
 - [ ] Palindrome Check
 
 ### 3. Number Theory
 - [x] [Prime Check](Number_Theory_Functions/Prime_Check)
 - [ ] Sieve of Eratosthenes (upto 'n' numbers)
 - [ ] Prime Factorization
-- [ ] Get all Factors
+- [ ] Get all Factors (return a Map)
 - [ ] GCD of 'a' and 'b' using Euclidean Algorithm
 - [ ] LCM of 'a' and 'b'
 - [ ] Binary Exponentiation (with modulus)
-- [ ] Get Factorial upto 'n' (with modulus)
-- [ ] Get Inverse Factorial upto 'n' (with modulus)
+- [ ] Get Factorial upto 'n' (with modulus) (return an array)
+- [ ] Get Inverse Factorial upto 'n' (with modulus) (return an array)
 - [ ] nPr (Permutation with modulus)
 - [ ] nCr (Combination with modulus)
 
@@ -47,7 +47,8 @@ These are fundamental algorithms and functions often used in competitive program
 - [ ] Kruskal’s Algorithm
 - [ ] Prim’s Algorithm
 - [ ] Floyd-Warshall Algorithm (All-Pairs Shortest Path)
-- [ ] Disjoint Set Union
+- [ ] Disjoint Set Union (size-based) (TC: O(n*a(n)))
+- [ ] Disjoint Set Union (rank-based) (TC: O(n*a(n)))
 - [ ] Binary Lifting
 - [ ] Euler Tour Traversal
 
