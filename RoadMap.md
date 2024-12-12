@@ -16,7 +16,7 @@ These are fundamental algorithms and functions often used in competitive program
 - [ ] Upper bound (Binary Search)
 - [ ] Lower bound (Binary Search)
 - [ ] Generate all Permutation (n!)
-- [ ] Count occurrences of all elements
+- [x] [Count occurrences of all elements](Array_Functions/Count_Occurence) 
 
 ### 2. String Algorithms
 - [x] [Frequency Array](String_Functions/Frequency_Array)
