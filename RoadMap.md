@@ -6,7 +6,7 @@ These are fundamental algorithms and functions often used in competitive program
 
 ### 1. Array functions
 - [x] [Reverse an Array (copy)](Array_Functions/Reverse_an_Array)
-- [ ] Reverse an Array (in place)
+- [x] [Reverse an Array (in place)](Array_Functions/Reversing_an_array(in_place))
 - [ ] Find Max-Min of Array
 - [ ] Prefix Array
 - [ ] Suffix Array
@@ -14,13 +14,13 @@ These are fundamental algorithms and functions often used in competitive program
 - [ ] Print 2D Matrix
 - [ ] Binary Search
 - [ ] Upper bound (Binary Search)
-- [ ] Upper bound (Binary Search)
+- [ ] Lower bound (Binary Search)
 - [ ] Generate all Permutation (n!)
 - [x] [Count occurrences of all elements](Array_Functions/Count_Occurence) 
 
 ### 2. String Algorithms
-- [x] [Frequency Map](String_Functions/Frequency_Map)
-- [ ] Generate all Substrings (n^2)
+- [x] [Frequency Array](String_Functions/Frequency_Array)
+- [X] [Substrings](String_Functions/Substrings) (n^2)
 - [ ] Generate all Substrings (Subsequences) (2^n)
 - [ ] Generate all Permutation (n!)
 - [ ] Palindrome Check
