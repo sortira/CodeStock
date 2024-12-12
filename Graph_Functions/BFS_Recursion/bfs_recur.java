@@ -1,61 +1,61 @@
-import java.util.*;
+package graph_programs;
+import java.util.ArrayList;
 
-class Graph {
-    private Map<Integer, List<Integer>> adjList;
-
-    public Graph() {
-        adjList = new HashMap<>();
+public class GraphSearch {
+    int V;
+    
+    ArrayList<Integer> adjancency[];
+    GraphSearch(int nodes){
+        V = nodes;
+        adj = new ArrayList[nodes];
+        for(int i=0;i<V;i++) {
+            adj[i]=new ArrayList<Integer>();
+        }
     }
 
-    // Add an edge to the graph
-    public void addEdge(int src, int dest) {
-        adjList.putIfAbsent(src, new ArrayList<>());
-        adjList.putIfAbsent(dest, new ArrayList<>());
-        adjList.get(src).add(dest);
-        adjList.get(dest).add(src);  // For undirected graph, add the reverse edge
+    public void addEdge(int v, int u) {
+        adj[x].add[y];
     }
-
-    // BFS Traversal from a given source node
-    public void BFS(int startNode) {
-        // Track visited nodes
-        Set<Integer> visited = new HashSet<>();
-        // Queue for BFS
-        Queue<Integer> queue = new LinkedList<>();
-        
-        // Mark the starting node as visited and enqueue it
-        visited.add(startNode);
-        queue.offer(startNode);
-
-        while (!queue.isEmpty()) {
-            // Dequeue a node from the queue and print it
-            int node = queue.poll();
-            System.out.print(node + " ");
-            
-            // Get all the adjacent nodes of the dequeued node
-            // If an adjacent node hasn't been visited, mark it visited and enqueue it
-            for (int neighbor : adjList.get(node)) {
-                if (!visited.contains(neighbor)) {
-                    visited.add(neighbor);
-                    queue.offer(neighbor);
+    
+    void breadthFirstSearch(int sourcevertex) {
+        boolean[] visited = new boolean[V];
+        ArrayList<Integer> a1 = new ArrayList<Integer>();
+        visited[startNode]=true;
+        a1.add(startNode);
+        while (!a1.isEmpty()) {
+            startNode = a1.remove(0);
+            system.out.print(startNode+" ");
+            Iterator i = adj[startNode].iterator();
+            while(i.hasNext()) {
+                int n =(int) i.next();
+                if(!visited[n]) {
+                    visited[n]=true;
+                    a1.add(n);
                 }
             }
         }
     }
 
-    public static void main(String[] args) {
-        // Create a graph
-        Graph graph = new Graph();
+   public static void main(String[] args) {
+       GraphSearch g1=new GraphSearch(6);
+       g1.Edge(0, 1);
+       g1.Edge(0, 2);
+       g1.Edge(0, 5);
+       g1.Edge(1, 0);
+       g1.Edge(1, 2);
+       g1.Edge(2, 0);
+       g1.Edge(2, 1);
+       g1.Edge(2, 3);
+       g1.Edge(2, 4);
+       g1.Edge(3, 2);
+       g1.Edge(4, 2);
+       g1.Edge(4, 5);
+       g1.Edge(5, 0);
+       g1.Edge(5, 4);
         
-        // Add edges to the graph
-        graph.addEdge(0, 1);
-        graph.addEdge(0, 2);
-        graph.addEdge(1, 3);
-        graph.addEdge(1, 4);
-        graph.addEdge(2, 5);
-        graph.addEdge(2, 6);
+       g1.breadthFirstSearch(0);
 
-        // Perform BFS starting from node 0
-        System.out.println("BFS Traversal starting from node 0:");
-        graph.BFS(0);
+
     }
+
 }
