@@ -1,4 +1,4 @@
-def make_sub(s):
+def makeSub(s):
     n = len(s)
     subs = []
     for i in range(n):
@@ -6,11 +6,8 @@ def make_sub(s):
             subs.append(s[i:j])
     return subs
 
-def main():
+if __name__ == "__main__":
     a = "abcd"
-    substrings = make_sub(a)
+    substrings = makeSub(a)
     for s in substrings:
         print(s)
-
-if __name__ == "__main__":
-    main()
