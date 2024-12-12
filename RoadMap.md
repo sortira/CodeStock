@@ -20,7 +20,7 @@ These are fundamental algorithms and functions often used in competitive program
 
 ### 2. String Algorithms
 - [x] [Frequency Map](String_Functions/Frequency_Map)
-- [ ] Generate all Substrings (n^2)
+- [X] Generate all Substrings (n^2)
 - [ ] Generate all Substrings (Subsequences) (2^n)
 - [ ] Generate all Permutation (n!)
 - [ ] Palindrome Check
