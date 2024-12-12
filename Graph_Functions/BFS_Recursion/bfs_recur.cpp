@@ -1,31 +1,67 @@
-#include <ios stream>
+#include <iostream>
+#include <vector>
 #include <queue>
+
 using namespace std;
-int G[1000][1000];
-bool visited[1000];
-int main() {
-    int v,e,x,y;
-    queue<int> q;
-    count<<"Enter number of vertices and edges=";
-    cin>>v>>e;
-    while(e--) {
-        cin>>x>>y;
-        G[x][y]=G[y][x]=1;
+
+class Graph {
+public:
+    int V; // Number of vertices
+    vector<vector<int>> adjList; // Adjacency list to represent the graph
+
+    // Constructor
+    Graph(int V) {
+        this->V = V;
+        adjList.resize(V);
     }
-    count<<"Enter the start vertex=";
-    cin>>x;
-    visited[x]=true;
-    q.push(x);
-    while(!q.empty()){
-        x=q.front(); q.pop();
-        cout<<x<<",";
-        for(int i=1;i<v;i++)
-        {
-            if(G[X][I] && !visited[i]){
-                q.push(i);
-                visited[i]=true;
-            };
-        };
-    };
-    return 0; 
-}; 
+
+    // Function to add an edge to the graph
+    void addEdge(int u, int v) {
+        adjList[u].push_back(v);
+        adjList[v].push_back(u); // For undirected graph
+    }
+
+    // BFS traversal starting from a given source node
+    void BFS(int start) {
+        vector<bool> visited(V, false); // Keep track of visited nodes
+        queue<int> q;
+
+        // Mark the source node as visited and enqueue it
+        visited[start] = true;
+        q.push(start);
+
+        while (!q.empty()) {
+            int node = q.front();
+            q.pop();
+            cout << node << " "; // Process the current node
+
+            // Visit all the adjacent nodes
+            for (int neighbor : adjList[node]) {
+                if (!visited[neighbor]) {
+                    visited[neighbor] = true;
+                    q.push(neighbor);
+                }
+            }
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    int V = 6; // Number of vertices
+    Graph g(V);
+
+    // Adding edges to the graph
+    g.addEdge(0, 1);
+    g.addEdge(0, 2);
+    g.addEdge(1, 3);
+    g.addEdge(1, 4);
+    g.addEdge(2, 5);
+
+    // Perform BFS starting from node 0
+    cout << "BFS traversal starting from node 0: ";
+    g.BFS(0);
+
+    return 0;
+}
+
