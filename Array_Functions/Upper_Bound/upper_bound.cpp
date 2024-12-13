@@ -6,7 +6,7 @@ int upperBound(vector<int>& a, int key) {
     int l=0, r=a.size()-1;
     int ans = r+1;
     while(l<=r) {
-        int mid = (l+r)/2;
+        int mid = (r-l)/2 + l;
         if(a[mid] > key) {
             ans = mid;
             r = mid-1;

@@ -2,7 +2,7 @@ def upper_bound(a, key):
     l, r = 0, len(a) - 1
     ans = r+1
     while l <= r:
-        mid = (l + r) // 2
+        mid = (r - l) // 2 + l
         if a[mid] > key:
             ans = mid
             r = mid - 1
