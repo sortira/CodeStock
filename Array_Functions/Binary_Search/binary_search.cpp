@@ -7,7 +7,7 @@ int bsearch(double arr[], int n, double x)
     int mid, low = 0, high = n - 1;
     while (low <= high)
     {
-        mid = (low + high) / 2;
+        mid = low + (high - low) / 2;
         if (arr[mid] > x)
             high = mid - 1;
         else if (arr[mid] == x)
