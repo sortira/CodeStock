@@ -36,11 +36,11 @@ int main()
     cin >> x;
     // Sample input: x=65
 
-    int index = bsearch(arr, n, x);
-    // After calling bsearch function, index=4
-
     sort(arr, arr + n); 
     //For large dataset, it is not feasible to enter the numbers in sorted order
+    
+    int index = bsearch(arr, n, x);
+    // After calling bsearch function, index=4
     
     if (index != -1)
         cout << "The number " << x << " is found at index: " << index; // Prints 4
