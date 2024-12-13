@@ -7,28 +7,21 @@ public class upper_bound {
         int ans = r+1;
         while (l <= r) {
             int mid = (l + r) / 2;
-            if (a.get(mid) <= key) {
+            if (a.get(mid) > key) {
                 ans = mid;
-                l = mid + 1;
-            } else {
                 r = mid - 1;
             }
+            else {
+                l = mid + 1;
+            }
         }
-        if (ans != a.size() && a.get(ans) == key) {
-            return ans;
-        }
-        return a.size();
+        return ans;
     }
 
     public static void main(String[] args) {
         List<Integer> a = Arrays.asList(1, 2, 2, 2, 2, 3, 3, 5);
         int key = 2;
         int uBound = upperBound(a, key);
-        if (uBound == a.size()) {
-            System.out.println("Key not found.");
-        }
-        else {
-            System.out.printf("Upper Bound of '%d' is: %d\n", key, uBound);
-        }
+        System.out.printf("Upper Bound of '%d' is: %d\n", key, uBound);
     }
 }
