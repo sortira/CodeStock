@@ -21,7 +21,7 @@ These are fundamental algorithms and functions often used in competitive program
 ### 2. String Algorithms
 - [x] [Frequency Array](String_Functions/Frequency_Array)
 - [X] [Substrings](String_Functions/Substrings) (n^2)
-- [ ] Generate all Substrings (Subsequences) (2^n)
+- [x] [Generate all Substrings (Subsequences)](String_Functions/Subsequences) (2^n)
 - [ ] Generate all Permutation (n!)
 - [ ] Palindrome Check
 
