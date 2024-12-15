@@ -11,5 +11,5 @@ It is a subset of the edges of a given graph that connects all vertices in the g
 
 # Complexities
 - Time Complexity: O(E*logE + E*&alpha;(V))
-- Space Complexity: O(V + E)
-E: Number of edges,    V: Number of vertices
+- Space Complexity: O(V + E) <br>
+E: Number of edges, V: Number of vertices, &alpha;: Inverse Ackermann Function
