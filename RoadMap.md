@@ -46,7 +46,7 @@ These are fundamental algorithms and functions often used in competitive program
 - [ ] Depth-First Search (DFS) (Iterative)
 - [ ] Dijkstra's Shortest Path Algorithm
 - [ ] Bellman-Ford Algorithm
-- [ ] Kruskal’s Algorithm
+- [x] [Kruskal’s Algorithm](Graph_Functions/Kruskal_s)
 - [ ] Prim’s Algorithm
 - [ ] Floyd-Warshall Algorithm (All-Pairs Shortest Path)
 - [ ] Disjoint Set Union (size-based) (TC: O(n*a(n)))
