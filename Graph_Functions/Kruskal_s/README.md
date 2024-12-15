@@ -8,3 +8,8 @@ It is a subset of the edges of a given graph that connects all vertices in the g
 - `struct Edge`: It is used to represent an edge with two vertices (`u`,`v`) and their respective `weight`. An overloaded operator `<` is used to allow sorting of edges by their weights.
 
 - `unionSets`: Merges two disjoint sets containing vertices `u` and `v` using union by rank.
+
+# Complexities
+- Time Complexity: O(E*logE + E*&alpha;(V))
+- Space Complexity: O(V + E)
+E: Number of edges,    V: Number of vertices
