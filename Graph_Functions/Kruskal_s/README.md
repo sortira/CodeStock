@@ -1,4 +1,4 @@
-## Kruskal's Algorithm
+# Kruskal's Algorithm
 It is an algorithm used to find the Minimum Spanning Tree(MST) of a graph.
 
 # Minimum Spanning Tree (MST)
