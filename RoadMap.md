@@ -28,6 +28,7 @@ These are fundamental algorithms and functions often used in competitive program
 ### 3. Number Theory
 - [x] [Prime Check](Number_Theory_Functions/Prime_Check)
 - [x] [Sieve of Eratosthenes (upto 'n' numbers)](Number_Theory_Functions/Sieve_Of_Eratosthenes)
+- [x] [nthFibonacci](Number_Theory_Functions/nthFibonacci)
 - [ ] Prime Factorization
 - [ ] Get all Factors (return a Map)
 - [ ] GCD of 'a' and 'b' using Euclidean Algorithm
