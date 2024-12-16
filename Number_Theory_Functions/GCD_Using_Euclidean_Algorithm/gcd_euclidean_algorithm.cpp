@@ -2,7 +2,7 @@
 using namespace std;
 
 int gcd(int a, int b) {
-    if (a==0 && b==0) return -1;
+    if (a==0 && b==0) return 0;
     if (a==0) return b;
     if (b==0) return a;
     
@@ -21,9 +21,6 @@ int gcd(int a, int b) {
 int main() {
     int a=111, b=37;
     int ans = gcd(a, b);
-    if (ans==-1) 
-      cout << "Undefined GCD for 0,0" << endl;
-    else 
-      cout << ans << endl;
+    cout << ans << endl;
     return 0;
 }
