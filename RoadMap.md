@@ -11,7 +11,7 @@ These are fundamental algorithms and functions often used in competitive program
 - [ ] Prefix Array
 - [ ] Suffix Array
 - [ ] Finding Mex of Array (Smallest Positive integer which is not present in array)
-- [ ] Print 2D Matrix
+- [x] [Print 2D Matrix](Array_Functions/Print_2D_Matrix)
 - [x] [Binary Search](Array_Functions/Binary_Search)
 - [x] [Upper bound](Array_Functions/Upper_Bound)
 - [ ] Lower bound (Binary Search)
@@ -23,7 +23,7 @@ These are fundamental algorithms and functions often used in competitive program
 - [X] [Substrings](String_Functions/Substrings) (n^2)
 - [x] [Generate all Substrings (Subsequences)](String_Functions/Subsequences) (2^n)
 - [ ] Generate all Permutation (n!)
-- [ ] Palindrome Check
+- [x] [Palindrome Check](String_Functions/Palindrome_Check)
 
 ### 3. Number Theory
 - [x] [Prime Check](Number_Theory_Functions/Prime_Check)
