@@ -2,38 +2,43 @@ import java.util.*;
 
 public class Dijkstra {
 
-    public static List<Integer> dijkstra(int V, List<List<int[]>> graph, int S) {
+    static class Pair implements Comparable<Pair> {
+        int node;
+        int weight;
 
-        for (List<int[]> neighbors : graph) {
-            for (int[] edge : neighbors) {
-                if (edge[1] < 0) {
-                    List<Integer> res = new ArrayList<>(Collections.nCopies(V, -1));
-                    return res;
-                }
-            }
+        Pair(int node, int weight) {
+            this.node = node;
+            this.weight = weight;
         }
 
-        TreeSet<int[]> st = new TreeSet<>((a, b) -> a[0] == b[0] ? Integer.compare(a[1], b[1]) : Integer.compare(a[0], b[0]));
+        @Override
+        public int compareTo(Pair o) {
+            return Integer.compare(this.weight, o.weight);
+        }
+    }
+
+    static List<Integer> dijkstra(int V, List<List<Pair>> graph, int S) {
+
+        PriorityQueue<Pair> pq = new PriorityQueue<>();
         List<Integer> dist = new ArrayList<>(Collections.nCopies(V, Integer.MAX_VALUE));
 
-        st.add(new int[]{0, S});
+        pq.add(new Pair(S, 0));
         dist.set(S, 0);
 
-        while (!st.isEmpty()) {
-            int[] current = st.pollFirst();
-            int dis = current[0];
-            int node = current[1];
+        while (!pq.isEmpty()) {
+            Pair current = pq.poll();
+            int node = current.node;
+            int dis = current.weight;
 
-            for (int[] neighbor : graph.get(node)) {
-                int adjNode = neighbor[0];
-                int edgeWeight = neighbor[1];
+            for (Pair neighbor : graph.get(node)) {
+                int adjNode = neighbor.node;
+                int edgeWeight = neighbor.weight;
+
+                if (edgeWeight < 0) continue;
 
                 if (dis + edgeWeight < dist.get(adjNode)) {
-                    if (dist.get(adjNode) != Integer.MAX_VALUE) {
-                        st.remove(new int[]{dist.get(adjNode), adjNode});
-                    }
                     dist.set(adjNode, dis + edgeWeight);
-                    st.add(new int[]{dist.get(adjNode), adjNode});
+                    pq.add(new Pair(adjNode, dist.get(adjNode)));
                 }
             }
         }
@@ -42,18 +47,18 @@ public class Dijkstra {
 
     public static void main(String[] args) {
         int V = 4, S = 2;
-        List<List<int[]>> graph = new ArrayList<>();
+        List<List<Pair>> graph = new ArrayList<>();
 
         for (int i = 0; i < V; i++) {
             graph.add(new ArrayList<>());
         }
 
-        graph.get(0).add(new int[]{1, 1});
-        graph.get(0).add(new int[]{2, 6});
-        graph.get(1).add(new int[]{2, 3});
-        graph.get(1).add(new int[]{0, 1});
-        graph.get(2).add(new int[]{1, 3});
-        graph.get(2).add(new int[]{0, 6});
+        graph.get(0).add(new Pair(1, 1));
+        graph.get(0).add(new Pair(2, 6));
+        graph.get(1).add(new Pair(2, 3));
+        graph.get(1).add(new Pair(0, 1));
+        graph.get(2).add(new Pair(1, 3));
+        graph.get(2).add(new Pair(0, 6));
 
         List<Integer> res = dijkstra(V, graph, S);
 

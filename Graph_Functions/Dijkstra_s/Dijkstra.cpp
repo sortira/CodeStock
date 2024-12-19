@@ -1,39 +1,29 @@
-#include <iostream>
-#include <vector>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
 
 vector <int> dijkstra(int V, vector<vector<pair<int, int>>> graph, int S) {
-    
-    for(auto& i: graph) {
-        for(auto& j: i) {
-            if(j.second < 0) {
-                vector<int> res(V,-1);
-                return res;
-            }
-        }
-    }
-    set<pair<int,int>> st; 
+
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq; 
     vector<int> dist(V, 1e9); 
     
-    st.insert({0, S}); 
+    pq.push({0, S}); 
     dist[S] = 0;
-    while(!st.empty()) {
-        auto it = *(st.begin()); 
+    while(!pq.empty()) {
+        auto it = pq.top();
+        pq.pop();
         int node = it.second; 
         int dis = it.first; 
-        st.erase(it); 
         
         for(auto it : graph[node]) {
             int adjNode = it.first; 
-            int edgW = it.second; 
+            int edgW = it.second;
             
+            if(edgW < 0)    continue;
+
             if(dis + edgW < dist[adjNode]) {
-                if(dist[adjNode] != 1e9) 
-                    st.erase({dist[adjNode], adjNode}); 
                 dist[adjNode] = dis + edgW; 
-                st.insert({dist[adjNode], adjNode}); 
-             }
+                pq.push({dist[adjNode], adjNode}); 
+            }
         }
     }
     return dist; 
