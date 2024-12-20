@@ -6,7 +6,7 @@ public class get_factors{
         double root = Math.floor(Math.sqrt(n));
         for (int i=1; i<=root;i++){
             if ( n%i ==0){
-                ans.add(i); //pushing the factors into a vector
+                ans.add(i); //pushing the factors <= (root) into an ArrayList
                 if ( i != (n/i)){
                     ans.add(n/i);  // pushing the corresponding factors which are greater than root(n)
                 }
