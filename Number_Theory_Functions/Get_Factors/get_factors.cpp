@@ -8,7 +8,7 @@ vector<int> get_factors(int n){
     int root = sqrt(n);
     for(int i=1; i<=root;i++){
         if (n%i ==0){
-            ans.push_back(i); //pushing the factors into a vector
+            ans.push_back(i); //pushing the factors <= root into a vector
             if ( i != (n/i)){
                 ans.push_back(n/i); // pushing the corresponding factors which are greater than root(n)
             }
