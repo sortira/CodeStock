@@ -54,14 +54,14 @@ For each query, it returns the result of the operation for the range `[L, R]`.
 Array: [7, 8, 9, 4, 5, 6, 7, 4, 1]
 Operation: min
 Queries: (0, 4), (4, 7), (7, 8)
-
-### Output: 
+```
+#### Output: 
 ```plaintext
 Function: min
 Query (0, 4) -> 4
 Query (4, 7) -> 4
 Query (7, 8) -> 1
-
+```
 ---
 
 ## Complexity :
