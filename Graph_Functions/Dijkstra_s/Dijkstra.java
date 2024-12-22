@@ -34,8 +34,6 @@ public class Dijkstra {
                 int adjNode = neighbor.node;
                 int edgeWeight = neighbor.weight;
 
-                if (edgeWeight < 0) continue;
-
                 if (dis + edgeWeight < dist.get(adjNode)) {
                     dist.set(adjNode, dis + edgeWeight);
                     pq.add(new Pair(adjNode, dist.get(adjNode)));

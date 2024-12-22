@@ -18,8 +18,6 @@ vector <int> dijkstra(int V, vector<vector<pair<int, int>>> graph, int S) {
             int adjNode = it.first; 
             int edgW = it.second;
             
-            if(edgW < 0)    continue;
-
             if(dis + edgW < dist[adjNode]) {
                 dist[adjNode] = dis + edgW; 
                 pq.push({dist[adjNode], adjNode}); 

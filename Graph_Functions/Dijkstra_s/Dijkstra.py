@@ -13,8 +13,6 @@ def dijkstra(V, graph, S):
             continue
 
         for adj_node, edge_weight in graph[node]:
-            if edge_weight < 0:
-                continue
             if dis + edge_weight < dist[adj_node]:
                 dist[adj_node] = dis + edge_weight
                 heapq.heappush(pq, (dist[adj_node], adj_node))
