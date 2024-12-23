@@ -32,7 +32,7 @@ These are fundamental algorithms and functions often used in competitive program
 - [ ] Prime Factorization
 - [x] [Get all Factors (return a Map)](Number_Theory_Functions/Get_Factors)
 - [x] [GCD of 'a' and 'b' using Euclidean Algorithm](Number_Theory_Functions/GCD_Using_Euclidean_Algorithm)
-- [ ] LCM of 'a' and 'b'
+- [x] [LCM of 'a' and 'b'](Number_Theory_Functions/LCM_of_a_and_b)
 - [x] [Binary Exponentiation (with modulus)](Number_Theory_Functions/Binary_exponentiation_(with_modulus))
 - [ ] Get Factorial upto 'n' (with modulus) (return an array)
 - [ ] Get Inverse Factorial upto 'n' (with modulus) (return an array)
