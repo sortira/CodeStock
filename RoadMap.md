@@ -30,7 +30,7 @@ These are fundamental algorithms and functions often used in competitive program
 - [x] [Sieve of Eratosthenes (upto 'n' numbers)](Number_Theory_Functions/Sieve_Of_Eratosthenes)
 - [x] [nthFibonacci](Number_Theory_Functions/nthFibonacci)
 - [ ] Prime Factorization
-- [ ] Get all Factors (return a Map)
+- [x] [Get all Factors (return a Map)](Number_Theory_Functions/Get_Factors)
 - [x] [GCD of 'a' and 'b' using Euclidean Algorithm](Number_Theory_Functions/GCD_Using_Euclidean_Algorithm)
 - [ ] LCM of 'a' and 'b'
 - [x] [Binary Exponentiation (with modulus)](Number_Theory_Functions/Binary_exponentiation_(with_modulus))
@@ -44,10 +44,10 @@ These are fundamental algorithms and functions often used in competitive program
 - [x] [Depth-First Search (DFS) (Recursive)](Graph_Functions/DFS_Recursion)
 - [x] [Breadth-First Search (BFS)](Graph_Functions/BFS_Recursion)
 - [ ] Depth-First Search (DFS) (Iterative)
-- [ ] Dijkstra's Shortest Path Algorithm
+- [x] [Dijkstra's Shortest Path Algorithm](Graph_Functions/Dijkstra_s)
 - [ ] Bellman-Ford Algorithm
-- [x] [Kruskal’s Algorithm](Graph_Functions/Kruskal_s)
-- [ ] Prim’s Algorithm
+- [x] [Kruskal's Algorithm](Graph_Functions/Kruskal_s)
+- [ ] Prim's Algorithm
 - [ ] Floyd-Warshall Algorithm (All-Pairs Shortest Path)
 - [ ] Disjoint Set Union (size-based) (TC: O(n*a(n)))
 - [ ] Disjoint Set Union (rank-based) (TC: O(n*a(n)))
@@ -57,5 +57,5 @@ These are fundamental algorithms and functions often used in competitive program
 
 ### 5. Miscellaneous
 - [x] [Fenwick Tree (Point Update, Range Query)](Miscellaneous_Functions/Fenwick_Tree)
-- [ ] Sparse Table (Min, Max, And, Or, Gcd, Lcm)
+- [x] Sparse Table (Min, Max, And, Or, Gcd, Lcm)
 - [ ] Segment Tree (Min and Max both, pass the function name as parameter in the class)
