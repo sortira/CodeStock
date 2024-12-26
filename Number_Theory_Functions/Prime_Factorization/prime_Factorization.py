@@ -1,38 +1,34 @@
 import math
+from collections import defaultdict
 
 class PrimeFactorization:
-    def is_prime(self, n):
-        if n == 1:
-            return False
-        number_of_factors = 0
-        for i in range(1, n):
-            if n % i == 0:
-                number_of_factors += 1
-        return number_of_factors <= 1
+    def get_prime_factors(self, n):
+        prime_factors = defaultdict(int)
 
-    def prime_factors(self, n):
-        if self.is_prime(n):
-            print("The given number is a prime number")
-        elif n == 1:
-            print("1 is not a prime number, and has only 1 factor")
-        else:
-            prime_factors = []
+        if n <= 1:
+            # Return an empty dictionary for n <= 1
+            return prime_factors
 
-            while n % 2 == 0:
-                prime_factors.append(2)
-                n //= 2
-            for i in range(3, int(math.sqrt(n)) + 1, 2):
-                while n % i == 0:
-                    prime_factors.append(i)
-                    n //= i
+        # Factor out 2 and count its power
+        while n % 2 == 0:
+            prime_factors[2] += 1
+            n //= 2
 
-            if n > 2:
-                prime_factors.append(n)
-            print(prime_factors)
+        # Factor out odd numbers
+        for i in range(3, int(math.sqrt(n)) + 1, 2):
+            while n % i == 0:
+                prime_factors[i] += 1
+                n //= i
+
+        # If n is a prime number greater than 2
+        if n > 2:
+            prime_factors[n] += 1
+
+        return dict(prime_factors)
 
 if __name__ == "__main__":
     obj = PrimeFactorization()
-    obj.prime_factors(1)
-    obj.prime_factors(37)
-    obj.prime_factors(315)
+    print(obj.get_prime_factors(1))
+    print(obj.get_prime_factors(37))
+    print(obj.get_prime_factors(315))
 
