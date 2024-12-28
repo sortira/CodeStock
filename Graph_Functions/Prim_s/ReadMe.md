@@ -8,11 +8,11 @@ It is a subset of the edges of a given graph that connects all vertices in the g
 - The algorithm is implemented in two different ways for `Dense` and `Sparse` graphs.
 
 # Complexities
-## Dense Graph
+### Dense Graph
 - Time Complexity: O(V<sup>2</sup>)
 - Space Complexity: O(V<sup>2</sup>)
 
-## Sparse Graph
+### Sparse Graph
 - Time Complexity: O(E * log(V))
 - Space Complexity: O(E + V) <br>
 E: Number of edges, V: Number of vertices
