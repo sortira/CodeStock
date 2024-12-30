@@ -4,7 +4,7 @@ public class lower_bound_bs{
         int end = arr.length -1;
         
         while(beg<=end){
-            int mid = (beg+end)/2;
+            int mid = (end - beg)/2  + beg;
             if (arr[mid] < target){
                 beg = mid+1; //searching in the right half for a greater element
             }
