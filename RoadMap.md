@@ -14,7 +14,7 @@ These are fundamental algorithms and functions often used in competitive program
 - [x] [Print 2D Matrix](Array_Functions/Print_2D_Matrix)
 - [x] [Binary Search](Array_Functions/Binary_Search)
 - [x] [Upper bound](Array_Functions/Upper_Bound)
-- [ ] Lower bound (Binary Search)
+- [x] [Lower bound (Binary Search)](Array_Functions/Lower_Bound_Binary_Search)
 - [ ] Generate all Permutation (n!)
 - [x] [Count occurrences of all elements](Array_Functions/Count_Occurence) 
 
