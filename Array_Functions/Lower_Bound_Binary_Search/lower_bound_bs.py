@@ -3,7 +3,7 @@ def lower_bound_bs(arr,target):
     end= len(arr)-1
     
     while beg<=end:
-        mid =(beg+end)//2
+        mid =(end - beg)//2 + beg
         if arr[mid]<target: 
             beg = mid+1 #searching in the right half for a greater element
         else:
