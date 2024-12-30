@@ -47,7 +47,7 @@ These are fundamental algorithms and functions often used in competitive program
 - [x] [Dijkstra's Shortest Path Algorithm](Graph_Functions/Dijkstra_s)
 - [ ] Bellman-Ford Algorithm
 - [x] [Kruskal's Algorithm](Graph_Functions/Kruskal_s)
-- [ ] Prim's Algorithm
+- [x] [Prim's Algorithm](Graph_Functions/Prim_s)
 - [ ] Floyd-Warshall Algorithm (All-Pairs Shortest Path)
 - [ ] Disjoint Set Union (size-based) (TC: O(n*a(n)))
 - [ ] Disjoint Set Union (rank-based) (TC: O(n*a(n)))
