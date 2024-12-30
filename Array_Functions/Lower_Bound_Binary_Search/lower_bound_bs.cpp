@@ -7,7 +7,7 @@ int lower_bound_bs(vector<int> arr, int target){
     int end = arr.size()-1;
 
     while(beg<=end){
-        int mid = (beg+end)/2;
+        int mid = (end-beg)/2 + beg;
         if (arr[mid]<target){
             beg=mid+1; //searching in the right half for a greater element
         }
