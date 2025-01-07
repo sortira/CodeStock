@@ -1,15 +1,18 @@
+
 def mex(arr):
+        n = len(arr)
+        seen = [False] * (n + 1)  
 
-	arr.sort()
 
-	mex = 0
-	for idx in range(len(arr)):
-		if arr[idx] == mex:
+        for m in arr:
+            if 0 < m <= n:
+                seen[m] = True
 
-			mex += 1
+        for i in range(1, n + 1):
+            if not seen[i]:
+                return i
 
-	return mex
-
+        return n + 1
 
 if __name__ == '__main__':
 
