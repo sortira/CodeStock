@@ -8,7 +8,7 @@ def mex(arr):
             if 0 < m <= n:
                 seen[m] = True
 
-        for i in range(1, n + 1):
+        for i in range(0, n + 1):
             if not seen[i]:
                 return i
 

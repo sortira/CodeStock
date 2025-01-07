@@ -13,7 +13,7 @@ using namespace std;
             }
         }
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = 0; i <= n; i++) {
             if (!seen[i]) {
                 return i;
             }
@@ -23,8 +23,7 @@ using namespace std;
     }
 int main()
 {
-	vector<int> arr = { 1, 0, 2, 4 };
+	vector<int> arr = { 1, 0, 2, 4};
 	cout << mex(arr) << endl;
 	return 0;
 }
-
