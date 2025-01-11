@@ -29,8 +29,8 @@ def zfunction(text, pattern):
     return result
 
 if __name__ == "__main__":
-    givenstring = "abcde"
-    pattern = ""
+    givenstring = "world peace"
+    pattern = "world"
 
     # Perform pattern search using Z algorithm
     result = zfunction(givenstring, pattern)
