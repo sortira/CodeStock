@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class ZFunction {
+
     public static List<Integer> zfunction(String text, String pattern) {
         // Handle edge case: empty pattern
         if (pattern.isEmpty()) {
@@ -33,7 +34,7 @@ public class Main {
 
         // Store positions where the pattern matches the text
         List<Integer> result = new ArrayList<>();
-        for (int i = 0; i < n; ++i) {
+        for (int i = pattern.length() + 1; i < n; ++i) {  // Start after the "$" delimiter
             if (Z[i] == pattern.length()) {
                 result.add(i - pattern.length() - 1);
             }
