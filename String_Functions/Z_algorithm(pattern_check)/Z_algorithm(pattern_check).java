@@ -43,8 +43,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String givenstring = "abcde";
-        String pattern = "";
+        String givenstring = "world peace";
+        String pattern = "world";
 
         // Perform pattern search using Z algorithm
         List<Integer> result = zfunction(givenstring, pattern);
