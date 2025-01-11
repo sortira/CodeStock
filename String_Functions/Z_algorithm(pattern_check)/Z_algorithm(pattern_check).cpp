@@ -35,7 +35,7 @@ vector<int> zfunction(const string& text, const string& pattern) {
 
     // Store positions where the pattern matches the text
     vector<int> result;
-    for (int i = 0; i < n; ++i) {
+    for (int i = pattern.length() + 1; i < n; ++i) {  // Start after the "$" delimiter
         if (Z[i] == pattern.length()) {
             result.push_back(i - pattern.length() - 1);
         }
@@ -53,9 +53,8 @@ int main() {
 
     if (result.empty()) {
         cout << "-1" << endl;
-    }
-    else {
-      cout<<"Pattern found at index ";
+    } else {
+        cout << "Pattern found at index ";
         for (int index : result) {
             cout << index << " ";
         }
