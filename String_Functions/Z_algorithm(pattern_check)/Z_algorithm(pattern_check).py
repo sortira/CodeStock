@@ -1,4 +1,4 @@
-def zfunction(text, pattern):
+def zfunction(text: str, pattern: str) -> list:
     # Handle edge case: empty pattern
     if not pattern:
         return list(range(len(text) + 1))
@@ -22,7 +22,7 @@ def zfunction(text, pattern):
 
     # Store positions where the pattern matches the text
     result = []
-    for i in range(n):
+    for i in range(len(pattern) + 1, n):  # Start after the "$" delimiter
         if Z[i] == len(pattern):
             result.append(i - len(pattern) - 1)
 
@@ -38,6 +38,5 @@ if __name__ == "__main__":
     if not result:
         print("-1")
     else:
-        print("Pattern found at index ", end="")
-        print(" ".join(map(str, result)))
+        print("Pattern found at index", " ".join(map(str, result)))
 
